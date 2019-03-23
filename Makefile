@@ -1,3 +1,8 @@
+install: run initialize
+
+initialize:
+	docker-compose run composer init
+
 run:
 	docker-compose up -d
 
