@@ -27,3 +27,7 @@ services:
     environment:
       - ADMINER_DEFAULT_SERVER=database
       - ADMINER_DESIGN=brade
+  composer:
+    image: composer:latest
+    volumes:
+      - .:/app
