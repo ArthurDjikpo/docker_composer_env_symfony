@@ -2,6 +2,7 @@ install: run initialize
 
 initialize:
 	docker-compose run composer init
+	docker-compose run composer install
 
 run:
 	docker-compose up -d
